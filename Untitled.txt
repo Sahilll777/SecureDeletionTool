@@ -1,0 +1,26 @@
+
+SECURE DELETION TOOL
+
+
+Activate Python Environment
+   
+    .venv\Scripts\activate
+
+2. Test CLI Commands
+
+    1. List all drives: python -m src.cli list-drives
+
+    2. List only removable drives: python -m src.cli list-drives --removable
+
+    3. Secure Delete a File: python -m src.cli wipe C:\SecureDeletionTest\file1.txt --passes 3
+
+    4. Secure Delete a Folder: python -m src.cli wipe C:\SecureDeletionTest\FolderA --passes 3
+
+    5. Preview Free Space Wipe: python -m src.cli wipe-free C:\SecureDeletionTest --passes 1 --preview
+
+    6. Perform Free Space Wipe: python -m src.cli wipe-free C:\SecureDeletionTest --passes 1
+
+3. Test GUI
+
+    python -m src.gui
+
